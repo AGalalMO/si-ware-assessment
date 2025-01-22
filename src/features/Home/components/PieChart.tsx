@@ -12,7 +12,7 @@ const StocksPieChart = ({ stocksData }: { stocksData: ChartDataType }) => {
     [stocksData]
   );
   const labels = useMemo(() => Object.keys(stocksData ?? {}), [stocksData]);
-  const chartColors = ["#3483cA", "#04204d", "#6b92bf"];
+  const chartColors = ["#bda01e", "#144008", "#400c08"];
   const data = {
     labels,
     datasets: [
