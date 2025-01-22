@@ -12,10 +12,19 @@ export const MainLayout = (props: Props) => {
       <nav className='bg-white border-gray-200 border-b-[1px]'>
         <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
           <div className='flex items-center space-x-3 rtl:space-x-reverse'>
-            <img src={logo} className='h-16' alt='Flowbite Logo' />
-            <span className='self-center text-2xl font-semibold whitespace-nowrap '>
+            <a
+              href='/'
+              aria-current='page'>
+              <img
+                src={logo}
+                className='h-16 cursor-pointer'
+                alt=' Logo'
+              />
+            </a>
+
+            <a href="/" className=' text-gray-800 self-center text-2xl font-semibold whitespace-nowrap hover:text-gray-950'>
               Assessment
-            </span>
+            </a>
           </div>
           <div className=' block w-auto' id='navbar-default'>
             <ul className='font-medium flex flex-row p-4    rtl:space-x-reverse  bg-white '>
