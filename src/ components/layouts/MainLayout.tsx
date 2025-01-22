@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { useLocation } from "react-router";
-
+import logo from "../../assets/logo1.jpg";
 interface Props {
   children: ReactNode;
 }
@@ -12,11 +12,7 @@ export const MainLayout = (props: Props) => {
       <nav className='bg-white border-gray-200 border-b-[1px]'>
         <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
           <div className='flex items-center space-x-3 rtl:space-x-reverse'>
-            <img
-              src='/src/assets/logo1.jpg'
-              className='h-16'
-              alt='Flowbite Logo'
-            />
+            <img src={logo} className='h-16' alt='Flowbite Logo' />
             <span className='self-center text-2xl font-semibold whitespace-nowrap '>
               Assessment
             </span>
