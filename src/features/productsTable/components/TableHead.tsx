@@ -1,6 +1,6 @@
 import { LoadingSpinner } from "../../../assets/loading";
 import { sortOptions } from "../types";
-
+import sortIcon from "../../../assets/sort.png";
 export default function TableHead({
   sortOptions,
   sortTableData,
@@ -25,7 +25,7 @@ export default function TableHead({
               }}>
               Product Name
               <img
-                src='/src/assets/sort.png'
+                src={sortIcon}
                 width={"16"}
                 height={"16"}
                 alt='sort icon'
@@ -51,7 +51,7 @@ export default function TableHead({
               }}>
               Price
               <img
-                src='/src/assets/sort.png'
+                src={sortIcon}
                 width={"16"}
                 height={"16"}
                 alt='sort icon'
